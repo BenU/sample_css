@@ -14,11 +14,82 @@ a {
 color: #f00;
 }
 
+h2 + p {
+  font-size: 0.8em;
+  font-style: italic;
+  margin: 1em auto 0;
+  max-width: 70%;
+  text-align: center;
+}
+
+/* HEADER STYLES */
+.header {
+  background-color: #000;
+  color: #fff
+}
+
+.header-nav {
+  float: right;
+  padding: 5.5vh 60px 0 0;
+}
+.header-nav > li {
+  display: inline-block;
+  margin-left: 1em;
+}
+.header-nav > li ~ li {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 1em;
+}
+
+.header-nav a {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header-nav a:hover,
+.header-nav a:active {
+  color: #ed6e2f;
+}
+
+.header-nav > li:first-child a {
+  color: #ed6e2f;
+}
+.header-nav >li:first-child a:hover {
+  color: #fff;
+}
+
+.header-logo {
+  background-color: #000;
+  box-sizing: border-box;
+  display: block;
+  height: 10vh;
+  padding-top: 10px;
+  position: relative;
+  text-align: center;
+  width: 10vh;
+}
+.header-logo img {
+  width: 4.3vh;
+}
+.header-logo:hover,
+.header-logo:active {
+  background-color: #ed6e2f;
+}
+
 /* HERO STYLES */
 .full-hero {
 background-color: #c7dbfc;
 height: 25vh;
+position: relative;
 }
+
+/* .full-hero:hover,
+.full-hero:active {
+  background-color: pink;
+} */
 
 /* SOCIAL STYLES */
 .social-link {
@@ -38,11 +109,21 @@ text-decoration: none;
 vertical-align: middle;
 width: 2.5em;
 }
+
+.social-link:hover,
+.social-link:active {
+  background: pink;
+}
+
+
 .social-list {
+  bottom: 10px;
 list-style: none;
 padding: 0;
-text-align: center;
+/* text-align: right; */
+position: absolute;
 }
+
 .social-list > li {
 display: inline-block;
 margin: 0 0.5em;
