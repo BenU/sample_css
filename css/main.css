@@ -1,10 +1,11 @@
 /* GLOBAL STYLES */
+html {
+  box-shadow: 0 0 0 30px #000 inset;
+  padding: 0 30px;
+}
+  
 body {
   font-family: helvetica, arial, sans-serif;
-}
-html, body {
-  margin: 0;
-  padding: 0;
 }
 h1 {
   font-size: 7vw;
@@ -25,7 +26,10 @@ h2 + p {
 /* HEADER STYLES */
 .header {
   background-color: #000;
-  color: #fff
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
 }
 
 .header-nav {
@@ -66,6 +70,7 @@ h2 + p {
   box-sizing: border-box;
   display: block;
   height: 10vh;
+  left: -30px;
   padding-top: 10px;
   position: relative;
   text-align: center;
@@ -98,7 +103,7 @@ border-radius: 99px;
 box-sizing: border-box;
 color: #fff;
 display: inline-block;
-font-family: helvetica, arial, sans;
+font-family: helvetica, arial, sans-serif;
 font-size: 1rem;
 font-weight: bold;
 height: 2.5em;
@@ -118,10 +123,9 @@ width: 2.5em;
 
 .social-list {
   bottom: 10px;
-list-style: none;
-padding: 0;
-/* text-align: right; */
-position: absolute;
+  list-style: none;
+  padding: 0;
+  position: absolute;
 }
 
 .social-list > li {
