@@ -1,0 +1,36 @@
+# Core settings
+* text=auto                  # Automatically detect text files and normalize line endings
+* text eol=lf                # Force LF (line feed) line endings for all text files
+
+# Binary files
+*.png binary                 # Treat PNG files as binary
+*.jpg binary                 # Treat JPG files as binary
+*.gif binary                 # Treat GIF files as binary
+*.svg binary                 # Treat SVG files as binary
+*.mp4 binary                 # Treat MP4 video files as binary
+*.mp3 binary                 # Treat MP3 audio files as binary
+*.pdf binary                 # Treat PDF files as binary
+*.zip binary                 # Treat ZIP archives as binary
+*.tar binary                 # Treat TAR archives as binary
+
+# Text file types
+*.html text eol=lf           # Normalize HTML files
+*.css text eol=lf            # Normalize CSS files
+*.js text eol=lf             # Normalize JavaScript files
+*.ts text eol=lf             # Normalize TypeScript files
+*.json text eol=lf           # Normalize JSON files
+*.md text eol=lf             # Normalize Markdown files
+*.yml text eol=lf            # Normalize YAML files
+*.yaml text eol=lf           # Normalize YAML files
+
+# Prevent merge conflicts for minified files (e.g., JavaScript or CSS)
+*.min.js binary              # Treat minified JS files as binary
+*.min.css binary             # Treat minified CSS files as binary
+
+# Custom diff and merge settings
+*.json diff=json             # Use a JSON-aware diff tool for JSON files
+*.lock merge=union           # Auto-merge lock files by union (e.g., package-lock.json)
+
+# Ignore executable attributes for specific files
+*.sh text eol=lf             # Normalize shell scripts
+*.bat text eol=lf            # Normalize batch files
