@@ -89,12 +89,9 @@ h2 + p {
 background-color: #c7dbfc;
 height: 25vh;
 position: relative;
+/* text-align: center; */
 }
 
-/* .full-hero:hover,
-.full-hero:active {
-  background-color: pink;
-} */
 
 /* SOCIAL STYLES */
 .social-link {
@@ -123,9 +120,11 @@ width: 2.5em;
 
 .social-list {
   bottom: 10px;
+  left: 50%;
   list-style: none;
   padding: 0;
   position: absolute;
+  transform: translate(-50%,0);
 }
 
 .social-list > li {
