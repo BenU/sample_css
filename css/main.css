@@ -89,7 +89,11 @@ h2 ~ p {
   background-color: #000;
   color: #fff;
   padding: 10vh 0 15vh;
+  position: relative;
   text-align: center;
+}
+.footer-list {
+  position: absolute;
 }
 .footer-logo img {
   width: 50px;
@@ -101,6 +105,9 @@ h2 ~ p {
 }
 .footer h3 span {
   color: #aaa;
+}
+.footer-nav {
+  padding-top: 40px;
 }
 .footer-nav li {
   display: inline-block;
