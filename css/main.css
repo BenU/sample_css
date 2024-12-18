@@ -23,6 +23,11 @@ h2 ~ p {
   text-align: center;
 }
 
+/* CONTENT WRAPPER STYLES */
+.content-wrapper {
+  padding-top: 10vh;
+}
+
 /* NAVIGATION STYLES */
 .nav-links a {
   font-size: 0.8rem;
@@ -119,10 +124,49 @@ h2 ~ p {
 
 /* HERO STYLES */
 .full-hero {
-background-color: #c7dbfc;
-height: 50vh;
-position: relative;
-/* text-align: center; */
+  background-color: #c7dbfc;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100vh;
+  padding-top: 10vh;
+}
+.full-hero::after{
+  bottom: 2vh;
+  color: #fff;
+  content: "﹀";
+  font-size: 36px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+}
+.hero-content {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.hero-content h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 7vw;
+  margin-bottom: 0.25em;
+}
+.hero-content .social-link {
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #557c83;
+  display: inline-block;
+  margin: 10px 4px -175px;
+/*   position: absolute; */
+}
+.hero-content .social-link:hover {
+  background-color: #000;
+  color: #fff;
+}
+.hero-home {
+  background-image: url(/images/shark.jpg);
+  background-position: center top;
 }
 
 
