@@ -162,7 +162,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 4.3.4)
-  webrick
+  webrick (~> 1.9.1)
 
 RUBY VERSION
    ruby 3.3.6p108
