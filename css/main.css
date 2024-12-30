@@ -474,3 +474,20 @@ font-size: 0.75em;
 }
 
 
+/* MEDIA QUERIES */
+
+@media (max-width: 800px) {
+  html {
+    box-shadow: none;
+    padding: 0;
+  }
+  .post-aside {
+    display: none;
+  }
+}
+@media (max-width: 600px), 
+       (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
+  .half-hero {
+    display: none;
+  }
+}
